@@ -7,7 +7,7 @@
 <body>
 <h1>Privacy Policy</h1>
 <h2>Terminspot</h2>
-<p><strong>Last updated: August 26, 2026</strong></p>
+<p><strong>Last updated: October 22, 2026</strong></p>
 
 <p>Terminspot is a marketplace to find and book free appointment slots with therapists (e.g. psychotherapists, masseurs) in Austria, Germany, and Switzerland. Unlike some of our other apps, Terminspot is <strong>not</strong> a purely on-device app — booking a real appointment requires sending information to the therapist and to our backend (Google Firebase).</p>
 
@@ -16,18 +16,42 @@
 <ul>
 <li>stored in our Firebase/Firestore database together with the booked slot, so the therapist can identify who booked the appointment;</li>
 <li>sent by email to the therapist, so they know who is coming;</li>
-<li>sent by email to you, as a booking confirmation.</li>
+<li>sent by email to you, as a booking confirmation (including a personal cancellation link).</li>
 </ul>
+<p>The app also keeps a copy of your own bookings (practice, date, time and the cancellation code) <strong>only on your device</strong> under "My appointments", so you can cancel directly in the app. This copy is never uploaded; it is removed automatically 7 days after the appointment, or when you cancel or uninstall the app.</p>
 <p>We do not use your name or email for advertising, and we do not sell it to third parties.</p>
+
+<h2>1a. Patients: "Notify me when available" (email alert)</h2>
+<p>If the search finds no practice yet for a profession in a certain place, you can ask to be notified by email once a matching practice becomes available on Terminspot. No account is needed.</p>
+<p><strong>Data we process:</strong></p>
+<ul>
+<li>your email address and a non-reversible check value (hash) derived from it, used to detect duplicate sign-ups and limit abuse;</li>
+<li>the selected profession and the place you entered;</li>
+<li>the time of sign-up and confirmation and a random confirmation code;</li>
+<li>for abuse prevention, your IP address briefly as part of a daily counter (stored for at most 2 days).</li>
+</ul>
+<p><strong>Purpose and legal basis:</strong> the data is used only to send you the notification you asked for. The legal basis is your consent (Art. 6(1)(a) GDPR), which you give by ticking the box in the form. The short-term processing of the IP address for abuse prevention is based on our legitimate interest in secure operation (Art. 6(1)(f) GDPR). Your data is not used for advertising and is not shared with practices.</p>
+<p><strong>Double opt-in:</strong> after submitting the form you first receive an email with a confirmation link. The notification only becomes active once you click it. If you do not confirm within 48 hours, your data is deleted automatically.</p>
+<p><strong>Retention:</strong> a confirmed notification is deleted as soon as we have informed you about a matching practice (one-time notification), when you unsubscribe, and at the latest after 12 months. Unconfirmed sign-ups are deleted after 48 hours.</p>
+<p><strong>Withdrawal / unsubscribe:</strong> you can withdraw your consent at any time with effect for the future, via the "unsubscribe" link in every one of these emails (this deletes all notifications for that email address) or by writing to us (see Contact). Processing carried out before the withdrawal remains lawful.</p>
 
 <h2>2. Therapists: Registration &amp; Subscription</h2>
 <p>Therapists who want to publish appointment slots create a profile (name, profession, practice city/postal code, contact email, optional professional registration number, and a short bio). This profile is shown publicly to patients so they can find and book with you. Publishing slots requires an active Premium subscription, processed by Google Play (Android) or the App Store (iOS) via RevenueCat. We do not process or store payment details ourselves — Apple, Google, and RevenueCat handle billing, using only what is needed to validate your subscription.</p>
 
 <h2>3. Data Storage &amp; Processing</h2>
-<p>Appointment slots and bookings are stored in Google Firebase (Firestore), hosted in the EU. We use Firebase Crashlytics to receive anonymous crash/error reports so we can fix bugs — these reports do not include your name, email, or booking details.</p>
+<p>Appointment slots, bookings and notification sign-ups are stored in Google Firebase (Firestore), hosted in the EU. We use Firebase Crashlytics to receive anonymous crash/error reports so we can fix bugs — these reports do not include your name, email, or booking details.</p>
+<p>We use the following service providers, which process data on our behalf as processors (Art. 28 GDPR) under their data processing terms:</p>
+<ul>
+<li><strong>Google Firebase</strong> (Google Ireland Ltd.) — database, sign-in for therapists, crash reports, push notifications for therapists;</li>
+<li><strong>Cloudflare Workers</strong> (Cloudflare, Inc.) — our server that sends emails, handles cancellations, verification and notification sign-ups, and applies abuse limits (IP-based counters kept for at most 2 days);</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, Paris, France) — delivery of all Terminspot emails (booking confirmations, cancellations, reminders, waitlist and availability notifications, account emails);</li>
+<li><strong>RevenueCat</strong> — subscription validation for therapists (see section 2).</li>
+</ul>
+<p>Where data may be transferred to the USA, this is based on the EU-US Data Privacy Framework and/or Standard Contractual Clauses.</p>
 
 <h2>4. Data Retention &amp; Deletion</h2>
-<p>Past bookings are kept so therapists can look up appointment history. If you want your booking data deleted, contact us (below) and we will remove it.</p>
+<p>Past bookings are kept so therapists can look up appointment history. If you want your booking data deleted, contact us (below) and we will remove it. Notification sign-ups are deleted as described in section 1a.</p>
+<p>You have the right to access, rectification, erasure, restriction of processing, data portability and to lodge a complaint with a supervisory authority (in Austria: Datenschutzbehörde).</p>
 
 <h2>5. Children</h2>
 <p>This app is not intended for children under 16 years of age.</p>
